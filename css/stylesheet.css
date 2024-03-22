@@ -1,14 +1,88 @@
 @charset "utf-8";
 @font-face {
 	font-family: 'Epilogue';
-	src: url("../fonts/Epilogue-Medium.ttf") format('ttf');
+	src: url("../fonts/Epilogue-Medium.woff") format('woff');
 	font-style: normal;
 	font-weight: 500;
 }
 @font-face {
 	font-family: 'Epilogue';
-	src: url("../fonts/Epilogue-Bold.ttf") format('ttf');
+	src: url("../fonts/Epilogue-Bold.woff") format('woff');
 	font-style: normal;
 	font-weight: 700;
 }
+/*############################## GENERAL ##############################*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	width: 100vw;
+	height: 100%;
+	align-items: center;
+}
+
+.flexColumn{
+	display: flex;
+	flex-direction: column;
+}
+.flexRow{
+	display: flex;
+	flex-direction: row;
+}
+/*############################## HEADER ##############################*/
+
+header{
+	width: 1400px;
+	height: 80px;
+	align-items: center;
+	justify-content: space-between;
+	font: 500 14px/1 'Epilogue';
+	color: hsl(0, 0%, 41%);
+}
+
+header > div{
+	align-items: center;
+}
+
+#head-left-side{
+	height: inherit;
+}
+
+nav{
+	width: 370px;
+	height: inherit;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dropDown-bt{
+	padding-right: 17px;
+	background: url("../images/icon-arrow-down.svg") right/10px no-repeat;
+}
+
+#header-logo{
+	width: 84px;
+	height: inherit;
+	background: url("../images/logo.svg") center/84px no-repeat;
+	margin-right: 60px;
+}
+
+#register-bt{
+	width: 100px;
+	height: 40px;
+	border: solid 2px hsl(0, 0%, 41%);
+	border-radius: 15px;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 40px;
+}
+
+
+
+
+
+
 
