@@ -34,7 +34,7 @@ body{
 }
 /*############################## HEADER ##############################*/
 
-header{
+header {
 	width: 1400px;
 	height: 80px;
 	align-items: center;
@@ -69,20 +69,83 @@ nav{
 	background: url("../images/logo.svg") center/84px no-repeat;
 	margin-right: 60px;
 }
-
+#head-right-side{
+	height: inherit;
+}
+#head-right-side input{
+	font: 500 14px/1 'Epilogue';
+	color: hsl(0, 0%, 41%);
+	background-color: white;
+}
+#login-bt{
+	border:none;
+}
 #register-bt{
 	width: 100px;
 	height: 40px;
 	border: solid 2px hsl(0, 0%, 41%);
 	border-radius: 15px;
-	text-align: center;
-	line-height: 40px;
 	margin-left: 40px;
 }
+/*############################## MAIN ##############################*/
 
+main{
+	width: 1400px;
+	height: 700px;
+	justify-content: space-between;
+}
 
+#main-content{
+	height: inherit;
+	width: 516px;
+	margin-left: 125px;
+	justify-content: flex-end;
+	align-items: flex-start;
+	text-align: left;
+}
 
+#content-heading{
+	font: 700 78px/1 'Epilogue';
+	color: black;
+	margin-bottom: 35px;
+}
+#content-txt{
+	font: 500 20px/1.3 'Epilogue';
+	color: hsl(0, 0%, 41%);
+	margin-bottom: 52px;
+}
+#learnMore-bt{
+	width: 163px;
+	height: 55px;
+	font: 500 18px/55px 'Epilogue';
+	text-align: center;
+	color: white;
+	background-color: black;
+	border: solid 1px black;
+	border-radius: 15px;
+	margin-bottom: 105px;
+}
+#client-databiz{
+	background: url("../images/client-databiz.svg") left/114px no-repeat;
+}
+#client-audiophile{
+	background: url("../images/client-audiophile.svg") left/73px no-repeat;
+}
+#client-meet{
+	background: url("../images/client-meet.svg") left/90px no-repeat;
+}
+#client-maker{
+	background: url("../images/client-maker.svg") left/83px no-repeat;
+}
+.client-logo{
+	width: 129px;
+	height: 36px;
+}
 
-
-
+#main-pic{
+	height: inherit;
+	width: 480px;
+	background: url("../images/image-hero-desktop.png") center/480px no-repeat;
+	margin-right: 90px;
+}
 
