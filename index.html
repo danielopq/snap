@@ -9,16 +9,31 @@
 <body class="flexColumn">
 	<!--############################## HEADER ##############################-->
 <header class="flexRow">
-	<div id="head-left-side" class="flexRow">
+	<div id="head-links" class="flexRow">
 		<div id="header-logo"></div>
 		<nav class="flexRow">
-			<div class="dropDown-bt">Features</div>
-			<div class="dropDown-bt">Company</div>
-			<div>Careers</div>
-			<div>About</div>
+			<div class="dropDown">
+				<div class="dropDown-bt">Features</div>
+				<div id="drop-features" class="dropDown-content">
+					<div class="drop-link"><img src="images/icon-todo.svg" alt=""/><a href="#">Todo List</a></div>
+					<div class="drop-link"><img src="images/icon-calendar.svg" alt=""/><a href="#">Calendar</a></div>
+					<div class="drop-link"><img src="images/icon-reminders.svg" alt=""/><a href="#">Reminders</a></div>
+					<div class="drop-link"><img src="images/icon-planning.svg" alt=""/><a href="#">Planning</a></div>
+				</div>
+			</div>
+			<div class="dropDown">
+				<div class="dropDown-bt">Company</div>
+				<div id="drop-company" class="dropDown-content">
+					<div class="drop-link"><a href="#">History</a></div>
+					<div class="drop-link"><a href="#">Our Team</a></div>
+					<div class="drop-link"><a href="#">Blog</a></div>
+				</div>
+			</div>
+			<a>Careers</a>
+			<a>About</a>
 		</nav>
 	</div>
-	<div id="head-right-side" class="flexRow">
+	<div id="head-signIn" class="flexRow">
 		<input id="login-bt" type="button" value="Login">
 		<input id="register-bt" type="button" value="Register">
 	</div>
