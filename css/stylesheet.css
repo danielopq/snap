@@ -194,21 +194,25 @@ main{
 	background-color: white;
 	border: solid 1px black;
 }
+#clientLogos > div{
+	height: 36px;
+	margin-right: 40px;
+}
 #client-databiz{
+	width: 114px;
 	background: url("../images/client-databiz.svg") left/114px no-repeat;
 }
 #client-audiophile{
+	width: 73px;
 	background: url("../images/client-audiophile.svg") left/73px no-repeat;
 }
 #client-meet{
+	width: 90px;
 	background: url("../images/client-meet.svg") left/90px no-repeat;
 }
 #client-maker{
+	width: 83px;
 	background: url("../images/client-maker.svg") left/83px no-repeat;
-}
-.client-logo{
-	width: 129px;
-	height: 36px;
 }
 
 #main-pic{
