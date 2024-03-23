@@ -30,6 +30,7 @@ a{
 a:visited{
 	color: hsl(0, 0%, 41%);
 }
+p{margin:0px;}
 .flexColumn{
 	display: flex;
 	flex-direction: column;
@@ -63,15 +64,21 @@ nav{
 	align-items: center;
 	justify-content: space-between;
 }
-
+nav > div{
+	height: 60px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+nav a:hover{
+	color:hsl(0, 0%, 8%);
+}
 #header-logo{
 	width: 84px;
 	height: inherit;
 	background: url("../images/logo.svg") center/84px no-repeat;
 	margin-right: 60px;
 }
-
-
 #drop-features{
 	width: 153px;
 	height: 160px;
@@ -86,17 +93,20 @@ nav{
 	align-self: flex-start;
 }
 .dropDown{
-	display:flex;
-	flex-direction: column;
+	cursor:pointer;
 }
-	
+.dropDown:hover .dropDown-content{
+	display:flex;
+}
+.dropDown:hover .dropDown-bt{
+	background-image: url("../images/icon-arrow-up.svg");
+}
 .dropDown-bt{
 	padding-right: 17px;
 	background: url("../images/icon-arrow-down.svg") right/10px no-repeat;
 }
-
 .dropDown-content{
-	display:flex;
+	display: none;
 	flex-direction: column;
 	align-items: flex-start;
 	text-align: left;
@@ -108,7 +118,6 @@ nav{
 	border-radius: 10px;
 	box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
-
 .drop-link{
 	display: flex;
 	align-items: flex-start;
@@ -118,6 +127,10 @@ nav{
 
 #head-signIn{
 	height: inherit;
+}
+#head-signIn input:hover{
+	cursor: pointer;
+	color: hsl(0, 0%, 8%);
 }
 #head-signIn input{
 	font: 500 14px/1 'Epilogue';
@@ -133,6 +146,9 @@ nav{
 	border: solid 2px hsl(0, 0%, 41%);
 	border-radius: 15px;
 	margin-left: 40px;
+}
+#register-bt:hover{
+	border-color: hsl(0, 0%, 8%);
 }
 /*############################## MAIN ##############################*/
 
@@ -171,6 +187,12 @@ main{
 	border: none;
 	border-radius: 15px;
 	margin-bottom: 105px;
+}
+#learnMore-bt:hover{
+	cursor:pointer;
+	color: black;
+	background-color: white;
+	border: solid 1px black;
 }
 #client-databiz{
 	background: url("../images/client-databiz.svg") left/114px no-repeat;
