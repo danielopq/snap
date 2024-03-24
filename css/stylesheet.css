@@ -29,6 +29,9 @@ a {
 a:visited {
 	color: hsl(0, 0%, 41%);
 }
+a:hover {
+	color: hsl(0, 0%, 8%);
+}
 p {
 	margin: 0px;
 }
@@ -56,21 +59,21 @@ header > div {
 #head-links {
 	height: inherit;
 }
-nav {
+/*---------- header-nav ----------*/
+#header-nav {
 	width: 370px;
 	height: inherit;
 	align-items: center;
 	justify-content: space-between;
 }
-nav > div {
+#header-nav > div {
 	height: 60px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
-nav a:hover {
-	color: hsl(0, 0%, 8%);
-}
+/*---------- logo + hamburger ----------*/
+
 #header-logo {
 	width: 84px;
 	height: inherit;
@@ -84,6 +87,7 @@ nav a:hover {
 #hamburger-img {
 	width: 32px;
 }
+/*---------- drop down menu ----------*/
 #drop-features {
 	width: 153px;
 	height: 160px;
@@ -100,10 +104,10 @@ nav a:hover {
 .dropDown {
 	cursor: pointer;
 }
-.dropDown:hover .dropDown-content {
+.desktop-dropDown:hover .dropDown-content {
 	display: flex;
 }
-.dropDown:hover .dropDown-bt {
+.desktop-dropDown:hover .dropDown-bt {
 	background-image: url("../images/icon-arrow-up.svg");
 }
 .dropDown-bt {
@@ -129,6 +133,7 @@ nav a:hover {
 	height: 16px;
 	margin-bottom: 15px;
 }
+/*---------- sign in ----------*/
 #head-signIn {
 	height: inherit;
 }
@@ -153,6 +158,58 @@ nav a:hover {
 }
 #register-bt:hover {
 	border-color: hsl(0, 0%, 8%);
+}
+/*############################## MOBILE MENU ##############################*/
+#mobile-nav{
+	display:none;
+	width: 100vw;
+	height: 100vh;
+	position:absolute;
+	overflow: hidden;
+	z-index: 2;
+	background-color: hsla(0,0%,0%,0.7);
+	font: 500 16px/1 'Epilogue';
+	color: hsl(0, 0%, 41%);
+}
+#mobile-content{
+	width: 240px;
+	height: inherit;
+	float: right;
+	overflow: hidden;
+	padding: 20px;
+	align-items: center;
+	background-color: white;
+}
+#mobile-close{
+	width: 100%;
+	overflow: hidden;
+}
+#mobile-close img{
+	float: right;
+}
+#mobile-menu{
+	min-height: 160px;
+	width: 100%;
+	margin-top: 35px;
+	border: solid 1px red;
+}
+#mobile-menu > div{
+	margin-bottom: 30px;
+}
+#mobile-menu div[class="dropDown-bt"]{
+	width: 95px;
+	
+}
+.dropDown-content-mb {
+	display: block;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	padding-top: 25px;
+	margin-left: 25px;
+}
+#drop-features-mb img{
+	margin-right: 15px;
 }
 /*############################## MAIN ##############################*/
 main {
@@ -244,7 +301,7 @@ main {
 	#header-hamburger {
 		display: block;
 	}
-	nav {
+	#header-nav {
 		display: none !important;
 	}
 	#head-signIn {

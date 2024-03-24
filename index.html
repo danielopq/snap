@@ -8,13 +8,13 @@
 <title>Snap</title>
 </head>
 <body class="flexColumn">
-	<!--############################## HEADER ##############################-->
+<!--############################## HEADER ##############################-->
 <header class="flexRow">
 	<div id="head-links" class="flexRow">
 		<div id="header-logo"></div>
 		<div id="header-hamburger"><img id="hamburger-img" src="images/icon-menu.svg" alt=""/></div>
-		<nav class="flexRow">
-			<div class="dropDown">
+		<nav id="header-nav" class="flexRow">
+			<div class="dropDown desktop-dropDown">
 				<div class="dropDown-bt"><a href="#">Features</a></div>
 				<div id="drop-features" class="dropDown-content">
 					<div class="drop-link"><img src="images/icon-todo.svg" alt=""/><a href="#">Todo List</a></div>
@@ -23,7 +23,7 @@
 					<div class="drop-link"><img src="images/icon-planning.svg" alt=""/><a href="#">Planning</a></div>
 				</div>
 			</div>
-			<div class="dropDown">
+			<div class="dropDown desktop-dropDown">
 				<div class="dropDown-bt"><a href="#">Company</a></div>
 				<div id="drop-company" class="dropDown-content">
 					<div class="drop-link"><a href="#">History</a></div>
@@ -40,10 +40,41 @@
 		<input id="register-bt" type="button" value="Register">
 	</div>
 </header>
-	<!--############################## MAIN ##############################-->
+<!--############################## MOBILE NAV ##############################-->
+<nav id="mobile-nav">
+	<div id="mobile-content" class="flexColumn">
+		<div id="mobile-close"><img src="images/icon-close-menu.svg" alt=""/></div>
+		<div id="mobile-menu">
+			<div class="dropDown">
+				<div class="dropDown-bt"><a href="#">Features</a></div>
+				<div id="drop-features-mb" class="dropDown-content-mb">
+					<div class="drop-link"><img src="images/icon-todo.svg" alt=""/><a href="#">Todo List</a></div>
+					<div class="drop-link"><img src="images/icon-calendar.svg" alt=""/><a href="#">Calendar</a></div>
+					<div class="drop-link"><img src="images/icon-reminders.svg" alt=""/><a href="#">Reminders</a></div>
+					<div class="drop-link"><img src="images/icon-planning.svg" alt=""/><a href="#">Planning</a></div>
+				</div>
+			</div>
+			<div class="dropDown">
+				<div class="dropDown-bt"><a href="#">Company</a></div>
+				<div id="drop-company-mb" class="dropDown-content-mb">
+					<div class="drop-link"><a href="#">History</a></div>
+					<div class="drop-link"><a href="#">Our Team</a></div>
+					<div class="drop-link"><a href="#">Blog</a></div>
+				</div>
+			</div>
+			<div><a href="#">Careers</a></div>
+			<div><a href="#">About</a></div>
+		</div>
+	</div>
+</nav>
+<!--############################## MAIN ##############################-->
 <main class="flexRow">
 	<div id="main-content" class="flexColumn">
-		<h1 id="content-heading"><p id="head-desk">Make<br>remote work</p><p id="head-mob">Make remote work</p></h1>
+		<h1 id="content-heading">
+			<p id="head-desk">Make<br>
+				remote work</p>
+			<p id="head-mob">Make remote work</p>
+		</h1>
 		<p id="content-txt">Get your team in sync, no matter your location. Streamline processes, create team rituals and watch productivity soar.</p>
 		<input id="learnMore-bt" type="button" value="Learn more">
 		<div id="clientLogos" class="flexRow">
