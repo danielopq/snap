@@ -43,15 +43,36 @@ p {
 	display: flex;
 	flex-direction: row;
 }
+/*---------- drop down menu (mobile & desktop) ----------*/
+.dropDown {
+	cursor: pointer;
+}
+.dropDown-bt {
+	padding-right: 17px;
+	padding: 0px 17px 0px 0px;
+	background: url("../images/icon-arrow-down.svg") right/10px no-repeat;
+	border: none;
+	color: hsl(0, 0%, 41%);
+	background-color: white;
+	cursor:pointer;
+}
+.drop-link {
+	display: flex;
+	align-items: flex-start;
+	height: 16px;
+	margin-bottom: 15px;
+}
 /*############################## HEADER ##############################*/
 header {
 	width: 1440px;
 	height: 80px;
 	align-items: center;
 	justify-content: space-between;
-	font: 500 15px/1 'Epilogue';
 	color: hsl(0, 0%, 41%);
 	padding: 0px 40px;
+}
+header *{
+		font: 500 15px/1 'Epilogue';
 }
 header > div {
 	align-items: center;
@@ -101,20 +122,14 @@ header > div {
 	height: 130px;
 	align-self: flex-start;
 }
-.dropDown {
-	cursor: pointer;
-}
-.desktop-dropDown:hover .dropDown-content {
+
+.desktop-dropDown:hover .dropDown-content-desk {
 	display: flex;
 }
 .desktop-dropDown:hover .dropDown-bt {
 	background-image: url("../images/icon-arrow-up.svg");
 }
-.dropDown-bt {
-	padding-right: 17px;
-	background: url("../images/icon-arrow-down.svg") right/10px no-repeat;
-}
-.dropDown-content {
+.dropDown-content-desk {
 	display: none;
 	flex-direction: column;
 	align-items: flex-start;
@@ -127,12 +142,7 @@ header > div {
 	border-radius: 10px;
 	box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
-.drop-link {
-	display: flex;
-	align-items: flex-start;
-	height: 16px;
-	margin-bottom: 15px;
-}
+
 /*---------- sign in ----------*/
 #head-signIn {
 	height: inherit;
@@ -142,7 +152,6 @@ header > div {
 	color: hsl(0, 0%, 8%);
 }
 #head-signIn input {
-	font: 500 14px/1 'Epilogue';
 	color: hsl(0, 0%, 41%);
 	background-color: white;
 }
@@ -168,8 +177,10 @@ header > div {
 	overflow: hidden;
 	z-index: 2;
 	background-color: hsla(0,0%,0%,0.7);
-	font: 500 16px/1 'Epilogue';
 	color: hsl(0, 0%, 41%);
+}
+#mobile-nav *{
+	font: 500 16px/1 'Epilogue';
 }
 #mobile-content{
 	width: 240px;
@@ -196,19 +207,17 @@ header > div {
 #mobile-menu > div{
 	margin-bottom: 30px;
 }
-#mobile-menu div[class="dropDown-bt"]{
+#mobile-menu input[class="dropDown-bt"]{
 	width: 95px;
-	
 }
 .dropDown-content-mb {
-	display: block;
 	flex-direction: column;
 	align-items: flex-start;
 	text-align: left;
 	padding-top: 25px;
 	margin-left: 25px;
 }
-#drop-features-mb img{
+#features-submenu-mb img{
 	margin-right: 15px;
 }
 /*############################## MAIN ##############################*/
