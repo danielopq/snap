@@ -17,8 +17,8 @@ Responsive Frontend development with drop down navigation for a website dedicate
 
 ### Screenshot
 
-- Desktop version: [https://github.com/danielopq/news/blob/main/snap/desktop.jpg]
-- Mobile version: [https://github.com/danielopq/news/blob/main/snap/mobile.jpg]
+- Desktop version: [https://github.com/danielopq/snap/blob/main/screenshots/desktop.jpg]
+- Mobile version: [https://github.com/danielopq/snap/blob/main/screenshots/mobile.jpg]
 
 
 ### Links
