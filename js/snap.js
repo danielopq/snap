@@ -23,7 +23,6 @@ function deploySubmenu(event){
 		if(document.getElementById("features-submenu-mb").style.display == "none"){
 			document.getElementById("features-submenu-mb").style.display ="block";
 			document.getElementById('featuresBt-mb').style.backgroundImage = "url('images/icon-arrow-up.svg')";
-			//document.getElementById('featuresBt-mb').style.transform = "scaleY(-1)";
 		}else{
 			document.getElementById("features-submenu-mb").style.display ="none";
 			document.getElementById('featuresBt-mb').style.backgroundImage = "url('images/icon-arrow-down.svg')";
