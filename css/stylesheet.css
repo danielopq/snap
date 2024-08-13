@@ -178,7 +178,7 @@ nav > div {
 #registerBt-desk{
 	width: 104px;
 	height: 42px;
-	margin-left: 40px;
+	margin-left: 35px;
 }
 
 /*############################## MOBILE MENU ##############################*/
@@ -248,18 +248,20 @@ main {
 	height: 640px;
 	justify-content: space-between;
 	margin-top: 67px;
+	border: solid 1px red;
 }
 #main-content {
+	border: solid 1px blue;
 	height: inherit;
 	width: 540px;
-	margin-left: 124px;
+	margin-left: 140px;
 	justify-content: flex-end;
 	align-items: flex-start;
 	text-align: left;
 }
 #content-heading {
 	color: black;
-	margin: 0px 0px 48px 0px;
+	margin: 10px 0px 48px 0px;
 }
 #head-desk{
 	width: inherit;
@@ -323,7 +325,7 @@ main {
 	height: inherit;
 	width: 480px;
 	background: url("../images/image-hero-desktop.png") center/480px no-repeat;
-	margin-right: 125px;
+	margin-right: 120px;
 }
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
@@ -331,9 +333,11 @@ main {
 @media screen and (max-width: 480px) {
 	/*---------- HEADER ----------*/
 	header {
-		width: 375px;
-		height: 78px;
+		width: 100vw;
+		padding: 0px 16px;
+		height: 35px;
 		padding: 0px 15px;
+		margin-top: 16px;
 	}
 	#head-links {
 		width: 375px;
@@ -355,12 +359,13 @@ main {
 		flex-direction:column-reverse!important;
 		align-items: center;
 		justify-content:flex-end;
+		margin-top: 24px;
 	}
 	#main-content {
-		height: 310px;
+		height: 410px;
 		width: 100vw;
 		margin: 48px auto 0px auto;
-		justify-content:space-between;
+		justify-content:flex-start;
 		align-items: center;
 		text-align: center;
 	}
@@ -374,9 +379,18 @@ main {
 		display:block;
 	}
 	#content-txt {
-		font: 500 17px/1.3 'Epilogue';
-		margin-bottom: 25px;
+		font: 500 16px/26px 'Epilogue';
+		margin-bottom: 24px;
 	}
+
+	#learnMore-bt {
+		width: 136px;
+		height: 48px;
+		font: 500 16px/26px 'Epilogue';
+		letter-spacing: -0.22px;
+		margin-bottom: 48px;
+	}
+
 	#clientLogos {
 		width: 375px;
 		justify-content: space-between;
