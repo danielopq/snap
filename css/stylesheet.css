@@ -254,14 +254,14 @@ main {
 	border: solid 1px blue;
 	height: inherit;
 	width: 540px;
-	margin-left: 140px;
+	margin-left: 124px;
 	justify-content: flex-end;
 	align-items: flex-start;
 	text-align: left;
 }
 #content-heading {
 	color: black;
-	margin: 10px 0px 48px 0px;
+	margin: 0px 0px 48px 0px;
 }
 #head-desk{
 	width: inherit;
@@ -325,7 +325,7 @@ main {
 	height: inherit;
 	width: 480px;
 	background: url("../images/image-hero-desktop.png") center/480px no-repeat;
-	margin-right: 120px;
+	margin-right: 125px;
 }
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
