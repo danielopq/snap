@@ -35,6 +35,7 @@ a:hover {
 }
 p {
 	margin: 0px;
+	padding: 0px;
 }
 .flexColumn {
 	display: flex;
@@ -43,6 +44,10 @@ p {
 .flexRow {
 	display: flex;
 	flex-direction: row;
+}
+h1{
+	margin: 0px;
+	padding: 0px;
 }
 /*---------- drop down menu (mobile & desktop) ----------*/
 .dropDown {
@@ -91,6 +96,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	color: hsl(0, 0%, 41%);
+	padding: 0px 41px;
 }
 header *{
 		font: 500 14px/16px 'Epilogue';
@@ -117,10 +123,10 @@ nav > div {
 /*---------- logo + hamburger ----------*/
 
 #header-logo {
-	width: 84px;
+	width: 83px;
 	height: inherit;
-	background: url("../images/logo.svg") center/84px no-repeat;
-	margin-right: 60px;
+	background: url("../images/logo.svg") center/83px no-repeat;
+	margin-right: 63px;
 }
 #header-hamburger {
 	display: none;
@@ -238,44 +244,54 @@ nav > div {
 }
 /*############################## MAIN ##############################*/
 main {
-	width: 1400px;
-	height: 700px;
+	width: 1440px;
+	height: 640px;
 	justify-content: space-between;
+	margin-top: 67px;
 }
 #main-content {
 	height: inherit;
-	width: 516px;
-	margin-left: 125px;
+	width: 540px;
+	margin-left: 124px;
 	justify-content: flex-end;
 	align-items: flex-start;
 	text-align: left;
 }
 #content-heading {
 	color: black;
+	margin: 0px 0px 48px 0px;
 }
 #head-desk{
-	font: 700 78px/1 'Epilogue';
-	margin-bottom: 35px;
+	width: inherit;
+	height: 161px;
+	font: 700 80px/80px 'Epilogue';
+	letter-spacing: -1.1px;
+	margin: 0px;
 }
 #head-mob{
-	font: 700 37px/1 'Epilogue';
+	width: inherit;
+	height: 42px;
+	font: 700 36px/42px 'Epilogue';
+	letter-spacing: -0.5px;
 	display: none;
 }
 #content-txt {
-	font: 500 20px/1.3 'Epilogue';
+	width: 445px;
+	height: 84px;
+	font: 500 18px/28px 'Epilogue';
 	color: hsl(0, 0%, 41%);
-	margin-bottom: 52px;
+	margin-bottom: 51px;
 }
 #learnMore-bt {
 	width: 163px;
-	height: 55px;
-	font: 500 18px/55px 'Epilogue';
+	height: 56px;
+	font: 500 18px/28px 'Epilogue';
 	text-align: center;
 	color: white;
 	background-color: black;
 	border: none;
 	border-radius: 15px;
-	margin-bottom: 105px;
+	margin-bottom: 108px;
 }
 #learnMore-bt:hover {
 	cursor: pointer;
@@ -296,18 +312,18 @@ main {
 	background: url("../images/client-audiophile.svg") left/73px no-repeat;
 }
 #client-meet {
-	width: 90px;
-	background: url("../images/client-meet.svg") left/90px no-repeat;
+	width: 89px;
+	background: url("../images/client-meet.svg") left/89px no-repeat;
 }
 #client-maker {
-	width: 83px;
-	background: url("../images/client-maker.svg") left/83px no-repeat;
+	width: 82px;
+	background: url("../images/client-maker.svg") left/82px no-repeat;
 }
 #main-pic {
 	height: inherit;
 	width: 480px;
 	background: url("../images/image-hero-desktop.png") center/480px no-repeat;
-	margin-right: 90px;
+	margin-right: 125px;
 }
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
@@ -343,7 +359,7 @@ main {
 	#main-content {
 		height: 310px;
 		width: 100vw;
-		margin: 0px auto 0px auto;
+		margin: 48px auto 0px auto;
 		justify-content:space-between;
 		align-items: center;
 		text-align: center;
