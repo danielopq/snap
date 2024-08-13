@@ -125,7 +125,7 @@ header > div {
 #header-logo {
 	width: 83px;
 	height: inherit;
-	background: url("../images/logo.svg") center/83px no-repeat;
+	background: url("../images/logo.svg") 0px 12px/83px no-repeat;
 	margin-right: 63px;
 }
 #header-hamburger {
@@ -246,7 +246,6 @@ header > div {
 main {
 	width: 1440px;
 	height: 640px;
-	justify-content: space-between;
 	margin-top: 67px;
 	border: solid 1px red;
 }
@@ -254,14 +253,15 @@ main {
 	border: solid 1px blue;
 	height: inherit;
 	width: 540px;
-	margin-left: 124px;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: flex-start;
 	text-align: left;
+	margin: 0px 175px 0px 125px;
 }
 #content-heading {
 	color: black;
-	margin: 0px 0px 48px 0px;
+	margin: 104px 0px 48px 0px;
+	border: solid 1px orange;
 }
 #head-desk{
 	width: inherit;
@@ -325,7 +325,6 @@ main {
 	height: inherit;
 	width: 480px;
 	background: url("../images/image-hero-desktop.png") center/480px no-repeat;
-	margin-right: 125px;
 }
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
