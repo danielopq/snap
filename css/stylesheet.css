@@ -21,6 +21,7 @@ body {
 	width: 100vw;
 	height: 100%;
 	align-items: center;
+	background-color: #FAFAFA;
 }
 a {
 	text-decoration: none;
@@ -76,7 +77,7 @@ input[type="button"]:hover{
 }
 .register-bt {
 	border: solid 2px hsl(0, 0%, 41%);
-	border-radius: 15px;
+	border-radius: 14px;
 }
 .register-bt:hover{
 	border-color: hsl(0, 0%, 8%);
@@ -85,14 +86,14 @@ input[type="button"]:hover{
 /*############################## HEADER ##############################*/
 header {
 	width: 1440px;
-	height: 80px;
+	height: 42px;
+	margin-top: 21px;
 	align-items: center;
 	justify-content: space-between;
 	color: hsl(0, 0%, 41%);
-	padding: 0px 40px;
 }
 header *{
-		font: 500 15px/1 'Epilogue';
+		font: 500 14px/16px 'Epilogue';
 }
 header > div {
 	align-items: center;
@@ -101,14 +102,14 @@ header > div {
 	height: inherit;
 }
 /*---------- header-nav ----------*/
-#header-nav {
-	width: 370px;
+nav {
+	width: 378px;
 	height: inherit;
 	align-items: center;
 	justify-content: space-between;
 }
-#header-nav > div {
-	height: 60px;
+nav > div {
+	height: inherit;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -169,8 +170,8 @@ header > div {
 }
 
 #registerBt-desk{
-	width: 100px;
-	height: 40px;
+	width: 104px;
+	height: 42px;
 	margin-left: 40px;
 }
 
@@ -325,7 +326,7 @@ main {
 	#header-hamburger {
 		display: block;
 	}
-	#header-nav {
+	nav {
 		display: none !important;
 	}
 	#head-signIn {
