@@ -108,13 +108,13 @@ header > div {
 	height: inherit;
 }
 /*---------- header-nav ----------*/
-nav {
+#desktop-nav {
 	width: 378px;
 	height: inherit;
 	align-items: center;
 	justify-content: space-between;
 }
-nav > div {
+#desktop-nav > div {
 	height: inherit;
 	display: flex;
 	flex-direction: column;
@@ -346,7 +346,7 @@ main {
 	#header-hamburger {
 		display: block;
 	}
-	nav {
+	#desktop-nav {
 		display: none !important;
 	}
 	#head-signIn {
