@@ -245,7 +245,7 @@ header > div {
 /*############################## MAIN ##############################*/
 main {
 	width: 1440px;
-	height: 640px;
+	height: 647px;
 	margin-top: 67px;
 }
 #main-content {
@@ -284,13 +284,13 @@ main {
 #learnMore-bt {
 	width: 163px;
 	height: 56px;
-	font: 500 18px/28px 'Epilogue';
+	font: bold 18px/28px 'Epilogue';
 	text-align: center;
 	color: white;
 	background-color: black;
 	border: none;
 	border-radius: 15px;
-	margin-bottom: 100px;
+	margin-bottom: 107px;
 }
 #learnMore-bt:hover {
 	cursor: pointer;
@@ -298,6 +298,7 @@ main {
 	background-color: white;
 	border: solid 1px black;
 }
+
 #clientLogos > div {
 	height: 36px;
 	margin-right: 40px;
@@ -321,7 +322,7 @@ main {
 #main-pic {
 	height: inherit;
 	width: 480px;
-	background: url("../images/image-hero-desktop.png") center/480px no-repeat;
+	background: url("../images/image-hero-desktop.png") top/480px no-repeat;
 }
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
