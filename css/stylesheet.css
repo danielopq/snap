@@ -23,7 +23,9 @@ body {
 	padding: 0px;
 	margin: 0px;
 	width: 100vw;
-	height: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	background-color: #FAFAFA;
 }
@@ -389,14 +391,17 @@ main {
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
 /*############################################################################*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
 
 	/*---------- HEADER ----------*/
 	header {
 		width: 100vw;
-		padding: 0px 16px;
-		height: 35px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 		padding: 0px 15px;
+		height: 35px;
 		margin-top: 16px;
 	}
 

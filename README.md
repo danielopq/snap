@@ -47,4 +47,5 @@ Overall, this project allowed me to apply my skills in responsive design and Jav
 I am a focused and dedicated professional with a strong educational foundation and hands-on experience in programming and web development. My expertise in PHP, SQL, JavaScript, HTML, CSS, JAVA and other modern web technologies enables me to build engaging, efficient, and visually appealing websites that meet both user needs and business goals.
 
 - linkedin - [www.linkedin.com/in/danielmartinezduque]
+- Personal web site: [https://danielmartinez.co.uk]
 
