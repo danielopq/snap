@@ -17,8 +17,8 @@
 
 ### Screenshot
 
-- Desktop version: [https://github.com/danielopq/snap/blob/main/screenshots/desktop.jpg]
-- Mobile version: [https://github.com/danielopq/snap/blob/main/screenshots/mobile.jpg]
+- [Desktop version](https://github.com/danielopq/snap/blob/main/screenshots/desktop.jpg)
+- [Mobile version](https://github.com/danielopq/snap/blob/main/screenshots/mobile.jpg)
 
 
 ### Links
