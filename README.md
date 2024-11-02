@@ -41,6 +41,7 @@ Overall, this project allowed me to apply my skills in responsive design and Jav
 - Git
 - HTML
 - CSS
+- JavaScript
 
 ## Author
 
