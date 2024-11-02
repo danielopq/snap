@@ -1,20 +1,24 @@
 @charset "utf-8";
+
 @font-face {
 	font-family: 'Epilogue';
 	src: url("../fonts/Epilogue-Medium.woff") format('woff');
 	font-style: normal;
 	font-weight: 500;
 }
+
 @font-face {
 	font-family: 'Epilogue';
 	src: url("../fonts/Epilogue-Bold.woff") format('woff');
 	font-style: normal;
 	font-weight: 700;
 }
+
 /*############################## GENERAL ##############################*/
 * {
 	box-sizing: border-box;
 }
+
 body {
 	padding: 0px;
 	margin: 0px;
@@ -23,36 +27,48 @@ body {
 	align-items: center;
 	background-color: #FAFAFA;
 }
+
 a {
 	text-decoration: none;
 	color: hsl(0, 0%, 41%);
+	transition: color 0.3s ease;
 }
+
 a:visited {
 	color: hsl(0, 0%, 41%);
 }
-a:hover {
-	color: hsl(0, 0%, 8%);
+
+@media(hover:hover){
+	a:hover {
+		color: hsl(0, 0%, 8%);
+	}
 }
+
 p {
 	margin: 0px;
 	padding: 0px;
 }
+
 .flexColumn {
 	display: flex;
 	flex-direction: column;
 }
+
 .flexRow {
 	display: flex;
 	flex-direction: row;
 }
-h1{
+
+h1 {
 	margin: 0px;
 	padding: 0px;
 }
+
 /*---------- drop down menu (mobile & desktop) ----------*/
 .dropDown {
 	cursor: pointer;
 }
+
 .dropDown-bt {
 	padding-right: 17px;
 	padding: 0px 17px 0px 0px;
@@ -60,32 +76,45 @@ h1{
 	border: none;
 	color: hsl(0, 0%, 41%);
 	background-color: white;
-	cursor:pointer;
+	cursor: pointer;
 }
+
 .drop-link {
 	display: flex;
 	align-items: flex-start;
 	height: 16px;
 	margin-bottom: 15px;
 }
+
 /*---------- login+register buttons (mobile & desktop) ----------*/
-input[type="button"]{
+
+input[type="button"] {
 	color: hsl(0, 0%, 41%);
 	background-color: white;
+	transition: color 0.3s ease;
 }
-input[type="button"]:hover{
-	cursor:pointer;
-	color: hsl(0, 0%, 8%);
-}
+
 .login-bt {
 	border: none;
 }
+
 .register-bt {
 	border: solid 2px hsl(0, 0%, 41%);
 	border-radius: 14px;
+	transition: border-color 0.3s ease,color 0.3s ease;
 }
-.register-bt:hover{
-	border-color: hsl(0, 0%, 8%);
+
+@media(hover:hover) {
+	.register-bt:hover {
+		border-color: hsl(0, 0%, 8%);
+		color: hsl(0, 0%, 8%);
+		cursor: pointer;
+	}
+
+	.login-bt:hover {
+		color: hsl(0, 0%, 8%);
+		cursor: pointer;
+	}
 }
 
 /*############################## HEADER ##############################*/
@@ -98,15 +127,19 @@ header {
 	color: hsl(0, 0%, 41%);
 	padding: 0px 41px;
 }
-header *{
-		font: 500 14px/16px 'Epilogue';
+
+header * {
+	font: 500 14px/16px 'Epilogue';
 }
-header > div {
+
+header>div {
 	align-items: center;
 }
+
 #head-links {
 	height: inherit;
 }
+
 /*---------- header-nav ----------*/
 #desktop-nav {
 	width: 378px;
@@ -114,12 +147,14 @@ header > div {
 	align-items: center;
 	justify-content: space-between;
 }
-#desktop-nav > div {
+
+#desktop-nav>div {
 	height: inherit;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
+
 /*---------- logo + hamburger ----------*/
 
 #header-logo {
@@ -128,34 +163,45 @@ header > div {
 	background: url("../images/logo.svg") 0px 12px/83px no-repeat;
 	margin-right: 63px;
 }
+
 #header-hamburger {
 	display: none;
 	cursor: pointer;
 }
+
 #hamburger-img {
 	width: 32px;
 }
+
 /*---------- drop down menu ----------*/
 #drop-features {
 	width: 153px;
 	height: 160px;
 	align-self: flex-end;
 }
+
 #drop-features img {
 	margin-right: 15px;
 }
+
 #drop-company {
 	width: 115px;
 	height: 130px;
 	align-self: flex-start;
 }
 
-.desktop-dropDown:hover .dropDown-content-desk {
-	display: flex;
-}
-.desktop-dropDown:hover .dropDown-bt {
-	background-image: url("../images/icon-arrow-up.svg");
-}
+/* 
+
+@media(hover:hover) {
+	.desktop-dropDown:hover .dropDown-content-desk {
+		display: flex;
+	}
+
+	.desktop-dropDown:hover .dropDown-bt {
+		background-image: url("../images/icon-arrow-up.svg");
+	}
+} */
+
 .dropDown-content-desk {
 	display: none;
 	flex-direction: column;
@@ -163,7 +209,7 @@ header > div {
 	text-align: left;
 	position: absolute;
 	z-index: 1;
-	top: 70px;
+	top: 60px;
 	padding-left: 25px;
 	padding-top: 25px;
 	border-radius: 10px;
@@ -175,27 +221,29 @@ header > div {
 	height: inherit;
 }
 
-#registerBt-desk{
+#registerBt-desk {
 	width: 104px;
 	height: 42px;
 	margin-left: 35px;
 }
 
 /*############################## MOBILE MENU ##############################*/
-#mobile-nav{
-	display:none;
+#mobile-nav {
+	display: none;
 	width: 100vw;
 	height: 100vh;
-	position:absolute;
+	position: absolute;
 	overflow: hidden;
 	z-index: 2;
-	background-color: hsla(0,0%,0%,0.7);
+	background-color: hsla(0, 0%, 0%, 0.7);
 	color: hsl(0, 0%, 41%);
 }
-#mobile-nav *{
+
+#mobile-nav * {
 	font: 500 16px/1 'Epilogue';
 }
-#mobile-content{
+
+#mobile-content {
 	width: 240px;
 	height: inherit;
 	float: right;
@@ -204,24 +252,30 @@ header > div {
 	align-items: center;
 	background-color: white;
 }
-#mobile-close{
+
+#mobile-close {
 	width: 100%;
 	overflow: hidden;
 }
-#mobile-close img{
+
+#mobile-close img {
 	float: right;
 }
-#mobile-menu{
+
+#mobile-menu {
 	min-height: 160px;
 	width: 100%;
 	margin-top: 35px;
 }
-#mobile-menu > div{
+
+#mobile-menu>div {
 	margin-bottom: 30px;
 }
-#mobile-menu input[class="dropDown-bt"]{
+
+#mobile-menu input[class="dropDown-bt"] {
 	width: 95px;
 }
+
 .dropDown-content-mb {
 	flex-direction: column;
 	align-items: flex-start;
@@ -229,25 +283,30 @@ header > div {
 	padding-top: 25px;
 	margin-left: 25px;
 }
-#features-submenu-mb img{
+
+#features-submenu-mb img {
 	margin-right: 15px;
 }
-#mobile-signIn{
+
+#mobile-signIn {
 	width: 100%;
 	height: 90px;
 	align-items: center;
 	justify-content: space-between;
 }
-#mobile-signIn input{
+
+#mobile-signIn input {
 	width: 100%;
 	height: 40px;
 }
+
 /*############################## MAIN ##############################*/
 main {
 	width: 1440px;
 	height: 647px;
 	margin-top: 67px;
 }
+
 #main-content {
 	height: inherit;
 	width: 540px;
@@ -256,24 +315,16 @@ main {
 	text-align: left;
 	margin: 0px 125px 0px 165px;
 }
-#content-heading {
-	color: black;
-	margin: 104px 0px 48px 0px;
-}
-#head-desk{
+
+#main-content h1 {
 	width: inherit;
 	height: 161px;
+	color: black;
+	margin: 104px 0px 48px 0px;
 	font: 700 80px/80px 'Epilogue';
 	letter-spacing: -1.1px;
-	margin: 0px;
 }
-#head-mob{
-	width: inherit;
-	height: 42px;
-	font: 700 36px/42px 'Epilogue';
-	letter-spacing: -0.5px;
-	display: none;
-}
+
 #content-txt {
 	width: 445px;
 	height: 84px;
@@ -281,6 +332,7 @@ main {
 	color: hsl(0, 0%, 41%);
 	margin-bottom: 51px;
 }
+
 #learnMore-bt {
 	width: 163px;
 	height: 56px;
@@ -291,43 +343,54 @@ main {
 	border: none;
 	border-radius: 15px;
 	margin-bottom: 107px;
-}
-#learnMore-bt:hover {
-	cursor: pointer;
-	color: black;
-	background-color: white;
-	border: solid 1px black;
+	transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-#clientLogos > div {
+@media(hover:hover){
+	#learnMore-bt:hover {
+		cursor: pointer;
+		color: black;
+		background-color: white;
+		border: solid 1px black;
+	}
+}
+
+#clientLogos>div {
 	height: 36px;
 	margin-right: 40px;
 }
+
 #client-databiz {
 	width: 114px;
 	background: url("../images/client-databiz.svg") left/114px no-repeat;
 }
+
 #client-audiophile {
 	width: 73px;
 	background: url("../images/client-audiophile.svg") left/73px no-repeat;
 }
+
 #client-meet {
 	width: 89px;
 	background: url("../images/client-meet.svg") left/89px no-repeat;
 }
+
 #client-maker {
 	width: 82px;
 	background: url("../images/client-maker.svg") left/82px no-repeat;
 }
+
 #main-pic {
 	height: inherit;
 	width: 480px;
 	background: url("../images/image-hero-desktop.png") top/480px no-repeat;
 }
+
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
 /*############################################################################*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
+
 	/*---------- HEADER ----------*/
 	header {
 		width: 100vw;
@@ -336,46 +399,54 @@ main {
 		padding: 0px 15px;
 		margin-top: 16px;
 	}
+
 	#head-links {
 		width: 375px;
 		justify-content: space-between;
 	}
+
 	#header-hamburger {
 		display: block;
 	}
+
 	#desktop-nav {
 		display: none !important;
 	}
+
 	#head-signIn {
 		display: none;
 	}
+
 	/*---------- MAIN ----------*/
 	main {
 		width: 100vw;
 		height: 730px;
-		flex-direction:column-reverse!important;
+		flex-direction: column-reverse !important;
 		align-items: center;
-		justify-content:flex-end;
+		justify-content: flex-end;
 		margin-top: 24px;
 	}
+
 	#main-content {
 		height: 410px;
 		width: 100vw;
 		margin: 48px auto 0px auto;
-		justify-content:flex-start;
+		justify-content: flex-start;
 		align-items: center;
 		text-align: center;
 	}
-	#main-content p{
-		width: 355px;
+
+	#main-content h1 {
+		width: 343px;
+		height: 42px;
+		margin: 0px;
+		font: 700 36px/42px 'Epilogue';
+		letter-spacing: -0.5px;
 	}
-	#head-desk{
-		display: none;
-	}
-	#head-mob{
-		display:block;
-	}
+
 	#content-txt {
+		width: 343px;
+		margin-top: 16px;
 		font: 500 16px/26px 'Epilogue';
 		margin-bottom: 24px;
 	}
@@ -394,26 +465,32 @@ main {
 		padding: 0px 15px;
 		margin-bottom: 0px;
 	}
-	#clientLogos > div {
+
+	#clientLogos>div {
 		height: 36px;
 		margin-right: 0px;
 	}
+
 	#client-databiz {
 		width: 83px;
 		background: url("../images/client-databiz.svg") left/83px no-repeat;
 	}
+
 	#client-audiophile {
 		width: 53px;
 		background: url("../images/client-audiophile.svg") left/53px no-repeat;
 	}
+
 	#client-meet {
 		width: 66px;
 		background: url("../images/client-meet.svg") left/66px no-repeat;
 	}
+
 	#client-maker {
 		width: 60px;
 		background: url("../images/client-maker.svg") left/60px no-repeat;
 	}
+
 	#main-pic {
 		height: 285px;
 		width: 375px;
