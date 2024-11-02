@@ -11,7 +11,7 @@
  */
 const showDesktopDropDown = (event, visible) => {
 	const id = event.target.id;
-	document.getElementById(`${id}Bt`).style.backgroundImage = visible ? 'url("../images/icon-arrow-up.svg")' : 'url("../images/icon-arrow-down.svg")';
+	document.getElementById(`${id}Bt`).style.backgroundImage = visible ? 'url("images/icon-arrow-up.svg")' : 'url("images/icon-arrow-down.svg")';
 	document.getElementById(`${id}Bt`).style.color = visible ? 'black' : 'hsl(0, 0%, 41%)';
 	document.getElementById(`drop-${id}`).style.display = visible ? 'flex' : 'none';
 }
