@@ -9,11 +9,12 @@
 
 
 ## Overview
-    This Landing page involved responsive frontend development featuring a customized dropdown navigation with icons, specifically designed for a website dedicated to remote work teams. The design is optimized for both desktop (1440px) and mobile (375px) views, ensuring a seamless user experience across devices.
 
-    The navigation component enhances usability by allowing users to easily access various sections of the site, with icons providing intuitive visual cues. The layout and elements are meticulously arranged according to the provided images, maintaining consistency with the intended design.
+This Landing page involved responsive frontend development featuring a customized dropdown navigation with icons, specifically designed for a website dedicated to remote work teams. The design is optimized for both desktop (1440px) and mobile (375px) views, ensuring a seamless user experience across devices.
 
-    The website is built using standard web technologies: HTML for structure, CSS for styling, and JavaScript for interactivity, with no frameworks or libraries used. This approach allows for greater control over the codebase and ensures that the website remains lightweight and efficient.
+The navigation component enhances usability by allowing users to easily access various sections of the site, with icons providing intuitive visual cues. The layout and elements are meticulously arranged according to the provided images, maintaining consistency with the intended design.
+
+The website is built using standard web technologies: HTML for structure, CSS for styling, and JavaScript for interactivity, with no frameworks or libraries used. This approach allows for greater control over the codebase and ensures that the website remains lightweight and efficient.
 
 ### Screenshot
 
